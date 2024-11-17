@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypixel Store</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Generic Online Store</h1>
+            <p>Purchase your favorite items for Minecraft!</p>
+        </header>
+
+        <div class="product-list">
+            <div class="product" data-price="10">
+                <h2>Rank Upgrade</h2>
+                <p>Upgrade your rank to VIP for better perks!</p>
+                <p class="price">$10.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product" data-price="20">
+                <h2>Game Currency</h2>
+                <p>Get 1000 game credits!</p>
+                <p class="price">$20.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product" data-price="5">
+                <h2>Cosmetic Item</h2>
+                <p>Unlock a unique cosmetic item!</p>
+                <p class="price">$5.00</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="payment-info">
+            <h2>Payment Information</h2>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="card-name">Name on Card</label>
+                    <input type="text" id="card-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date (MM/YY)</label>
+                    <input type="text" id="expiry-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" required>
+                </div>
+                <button type="submit" class="submit-button">Submit Payment</button>
+            </form>
+            <p id="message"></p>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 generic store. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="{{url_for('static', filename='jscript.js')}}"></script>
+</body>
+</html>
