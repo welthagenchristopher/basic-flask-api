@@ -3,7 +3,7 @@ document.getElementById('payment-form').addEventListener('submit', function(even
     event.preventDefault();
     const messageElement = document.getElementById('message');
 
-    // Simulation of payment capture. Do NOT use this, it's so bad - use a 3rd party service instead.
+    // Simulation of payment capture. Do NOT use this, I'm not supporting fraud.
     const name = document.getElementById('card-name').value;
     const cardNumber = document.getElementById('card-number').value;
     const expiryDate = document.getElementById('expiry-date').value;
