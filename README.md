@@ -1,5 +1,5 @@
 # basic-flask-api
-Super, super basic API to act as an access point for a web store.
+Super, super basic flask app.
 
 Really just to show what the basic framework is to get a Flask
 app up and running.
